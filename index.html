@@ -10,12 +10,12 @@
 
 <body>
     <div class="container">
-        <header role="banner">
+        <header role="banner" id = "sobremi">
             <nav role="navigation" class="main-nav" id="nav">
                 <ul class="list-nav">
                     <li class="list-nav-item"><a href="#" class="link active">Sobre mi</a></li>
-                    <li class="list-nav-item"><a href="" class="link">Proyectos</a></li>
-                    <li class="list-nav-item"><a href="" class="link">Experiencia</a></li>
+                    <li class="list-nav-item"><a href="#experiencia" class="link">Experiencia</a></li>
+                    <li class="list-nav-item"><a href="#proyectos" class="link">Proyectos</a></li>
                     <li class="list-nav-item"><a href="" class="link">Contacto</a></li>
                 </ul>
             </nav>
@@ -63,17 +63,111 @@
             </div>
         </div>
 
+        <div class="cabecera-experiencia" id = "experiencia">
+            <div class="cabecera-experiencia-laboral">
+                <svg class="size-8" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+                    <path d="M12 12l0 .01"></path>
+                    <path d="M3 13a20 20 0 0 0 18 0"></path>
+                </svg>
+                <h3>Experiencia laboral</h3>
+            </div>
+        </div>
+
         <div class="experiencia">
             <div class="linea-vertical">
-                <div class="punto"></div>
                 <div class="punto"></div>
                 <div class="punto"></div>
             </div>
 
             <div class="trabajos">
+                <div class="trabajo1">
+                    <h1>Data Engineer</h1>
+                    <h6>NTT Data</h6>
+                    <p>Noviembre 2024 - Actualidad</p>
+                </div>
+                <div class="trabajo2">
+                    <h1>Becario</h1>
+                    <h6>NTT Data</h6>
+                    <p>Abril 2024 - Junio 2024</p>
+                </div>
+            </div>
 
+            <div class="descripcion">
+                <div class="descripcion1">
+                    <p>BBVA Holding - Proyecto Cross Domain Data <br>
+                        • Desarrollo de ETL's y controles de calidad del dato con tecnología ADA (Kirby/Hammurabi,
+                        frameworks basados en Spark/Scala).<br>
+                        - Seguimiento y gestión de planificaciones con Control-M.<br>
+                        • Modelado de datos con herramientas como PowerDesigner.<br>
+                        • Uso de metodología Agile y JIRA.<br>
+                        • Contacto directo con cliente.</p>
+                </div>
+                <div class="descripcion2">
+                    <p>
+                        Etapa de Becario en Santander, en un proyecto en el cual fue donde toqué por primera vez temas
+                        Big Data, y comencé a insertarme en el mundo de los datos. Adquirí experiencia en el lenguaje de
+                        programación Scala al desarrollar proyectos utilizando el framework de Apache Spark.</p>
+                </div>
             </div>
         </div>
+
+        <div class="cabecera-proyectos" id = "proyectos">
+            <div class="cabecera-proyectoss">
+                <svg class="size-7" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 8l-4 4l4 4"></path>
+                    <path d="M17 8l4 4l-4 4"></path>
+                    <path d="M14 4l-4 16"></path>
+                </svg>
+                <h3>Proyectos</h3>
+            </div>
+        </div>
+
+        <div class="proyectos">
+            <div class="proyecto-biopark">
+                <div class="fondo-biopark">
+
+                </div>
+
+                <div class="texto-biopark">
+                    <h1>BioPark Responsive Website</h1>
+                    <p>Web realizada en HTML y CSS puro. Consta de 4 páginas distintas: <br>
+                        Página <strong>HOME</strong>: En esta página leerás un resumen de lo incluido en la web además de conocer el sitio.<br>
+                        Página <strong>FACILITIES</strong> Conoce las instalaciones y mapa de nuestro BioPark, y los distintos animales que tenemos.<br>
+                        Página <strong>CONSERVATION</strong>: Aquí se indica el objetivo y finalidad de este BioPark.<br>
+                        Página <strong>CONTACT</strong>: Es lá página de contacto donde encontrarás la información de contacto con
+                        nuestro BioPark.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-2">
+                <div class="fondo-luxeaura">
+
+                </div>
+
+                <div class="texto-biopark">
+                    <h1>Luxeaura (Fragancy Web)</h1>
+                    <p>Web realizada en HTML y CSS puro. Consta de 4 páginas distintas: <br>
+                        Página <strong>HOME</strong>: En esta página leerás un resumen de lo incluido en la web además de conocer el sitio. <br>
+                        Página <strong>ABOUT</strong> Conoce la historia de Luxeaura, y las distintas reseñas de los usuarios. <br>
+                        Página <strong>SHOP</strong>: Apartado de la tienda, donde encontrarás todas nuestras fragancias disponibles. <br>
+                        Página <strong>CONTACT</strong>: Es lá página de contacto donde encontrarás la información de contacto con
+                        nuestro BioPark.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Copyrights Juan Carlos Carballo. Todos los derechos reservados</p>
+            <a href="#sobremi"><p>Sobre mí</p></a>
+            <a href="#experiencia"><p>Experiencia</p></a>
+            <a href="#proyectos"><p>Proyectos</p></a>
+        </footer>
     </div>
 </body>
 

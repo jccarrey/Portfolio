@@ -165,7 +165,7 @@ body {
 
   overflow: hidden;
   width: 100vw;
-  height: 140vh;
+  height: fit-content;
   background: #1a1d1f;
   background: linear-gradient(
     90deg,
@@ -263,19 +263,18 @@ header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start; /* no existe 'top' */
-  align-items: flex-start;     /* no existe 'left' */
+  align-items: flex-start; /* no existe 'left' */
   align-content: center;
 
   width: 8em;
   height: 8em;
 
-  background-image: url(./5.jpg);
-  background-size:cover;
+  background-image: url(./styles/images/5.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
-
 
 .texto-introduccion {
   display: flex;
@@ -321,14 +320,14 @@ header {
   /* background-color: aliceblue; */
 }
 
-.rectangulo{
+.rectangulo {
   display: flex;
   flex-flow: row nowrap;
 
   justify-content: center;
   align-items: center;
   align-content: center;
-  
+
   width: 12em;
   height: 2.4em;
 
@@ -342,9 +341,46 @@ header {
   padding: 1em 1em;
 }
 
+.cabecera-experiencia {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  height: 5em;
+  width: 60em;
+  /* background-color: rgb(226, 218, 209); */
+
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.cabecera-experiencia-laboral {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.cabecera-experiencia-laboral h3 {
+  margin-top: 0.45em;
+  margin-left: 0.3em;
+  color: var(--main-color);
+
+  font-size: clamp(1.3rem, 1.229rem + 0.19vw, 1.4rem);
+}
+
+.cabecera-experiencia-laboral svg {
+  color: var(--main-color);
+}
+
 .experiencia {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
 
   justify-content: flex-start;
   align-items: flex-start;
@@ -369,13 +405,222 @@ header {
   background-color: grey;
   /* opacity: 0.4; */
   position: relative;
+
+  margin-left: 0.15em;
 }
 
 .punto {
-  width: .9em;
-  height: .9em;
-  background-color: var(--hover-color);
+  width: 0.9em;
+  height: 0.9em;
+  background-color: #eed6a4;
   border-radius: 50%; /* Hace que el div sea un círculo */
   /* opacity: 6; */
   /* border: 2px solid var(--main-color); */
+}
+
+.trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+  width: 20em;
+  height: 50.8vh;
+
+  /* background-color: grey; */
+  /* opacity: 0.4; */
+}
+
+.trabajo1 h1,
+.trabajo2 h1 {
+  color: #eed6a4;
+}
+
+.trabajo1 h6,
+.trabajo2 h6 {
+  color: var(--main-color);
+}
+
+.trabajo1 p,
+.trabajo2 p {
+  color: var(--main-color);
+}
+
+.trabajo2 {
+  margin-right: 3.2em;
+}
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+
+  width: 40em;
+  height: 50.8vh;
+
+  margin-left: 7em;
+  /* background-color: grey; */
+  /* opacity: 0.4; */
+}
+
+.descripcion1 p,
+.descripcion2 p {
+  font-size: clamp(0.77rem, 0.699rem + 0.19vw, 0.87rem);
+  color: var(--main-color);
+  line-height: 2em;
+}
+
+.cabecera-proyectos {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  height: 5em;
+  width: 60em;
+  /* background-color: rgb(226, 218, 209); */
+
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.cabecera-proyectoss {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.cabecera-proyectoss h3 {
+  margin-top: 0.45em;
+  margin-left: 0.3em;
+  color: var(--main-color);
+
+  font-size: clamp(1.3rem, 1.229rem + 0.19vw, 1.4rem);
+}
+
+.cabecera-proyectoss svg {
+  color: var(--main-color);
+}
+
+.proyectos {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  height: 180vh;
+  width: 60em;
+  /* background-color: rgb(207, 202, 195); */
+}
+
+.proyecto-biopark {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+  width: 60em;
+  height: 50%;
+}
+
+.proyecto-2 {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+  width: 60em;
+  height: 50%;
+}
+
+.fondo-biopark {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  height: 65%;
+
+  background-image: url(./styles/images/proyecto\ biopark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-color: #eed6a4; */
+  border-radius: 13px;
+}
+
+.texto-biopark {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  height: 30%;
+  /* background-color: pink; */
+}
+
+.texto-biopark p {
+  line-height: 2em;
+  color: grey;
+  font-size: clamp(0.77rem, 0.699rem + 0.19vw, 0.87rem);
+}
+
+.texto-biopark h1 {
+  color: var(--main-color);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.fondo-luxeaura {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  height: 65%;
+
+  background-image: url(./styles/images/Luxeaura.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  border-radius: 13px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  width: 60em;
+  height: 10vh;
+}
+
+footer p {
+  color: #e4e4e7e6;
+      font-size: clamp(0.77rem, 0.699rem + 0.19vw, 0.87rem);
+
+}
+
+footer a {
+  text-decoration: none;
 }
