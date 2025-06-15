@@ -157,6 +157,12 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+  align-content: center;
+
   overflow: hidden;
   width: 100vw;
   height: 140vh;
@@ -233,8 +239,9 @@ header {
   align-items: center;
   align-content: center;
 
-  height: 30em;
+  height: fit-content;
 
+  margin-top: 2em;
   /* background-color: bisque; */
 }
 
@@ -333,4 +340,42 @@ header {
 
 .rectangulo p {
   padding: 1em 1em;
+}
+
+.experiencia {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+
+  height: 30em;
+  width: 60em;
+  /* background-color: bisque; */
+
+  margin-top: 1em;
+}
+
+.linea-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribuye los puntos a lo largo de la línea */
+  align-items: center;
+
+  width: 0.1em;
+  height: 30em;
+
+  background-color: grey;
+  /* opacity: 0.4; */
+  position: relative;
+}
+
+.punto {
+  width: .9em;
+  height: .9em;
+  background-color: var(--hover-color);
+  border-radius: 50%; /* Hace que el div sea un círculo */
+  /* opacity: 6; */
+  /* border: 2px solid var(--main-color); */
 }
